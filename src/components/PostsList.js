@@ -8,10 +8,6 @@ let PostsList = ({posts, users, onDelete}) => {
             return user.id == post.userId
         })[0]
 
-        if (userFound == undefined || userFound == null){
-            alert("=> post id: " + post.id + ", post userId: " + post.userId)
-        }
-
         return userFound
     }
 
